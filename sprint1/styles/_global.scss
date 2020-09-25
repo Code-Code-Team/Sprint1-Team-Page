@@ -1,0 +1,25 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+img{
+    width: 80px;
+    height: auto;
+}
+
+body{
+    padding: 5px;
+    display: grid;
+    grid-template-rows: "header main";
+    grid-gap: 5%;
+    .header{
+        grid-area: header;
+    }
+    .main{
+        grid-area: main;
+    }
+
+}

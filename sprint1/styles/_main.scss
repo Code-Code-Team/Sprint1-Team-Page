@@ -1,0 +1,33 @@
+.main{
+    display: grid;
+    grid-template-columns: "member1  member2 member3" 
+                            "member1 member2 member3"
+                            "member1 member2 member3"
+                            "member4 member5 member6" 
+                            "member4 member5 member6"
+                            "member4 member5 member6"
+                            "member7";
+    
+    grid-gap: 5%;
+    .member1{
+        grid-area: member1;
+    }
+    .member2{
+        grid-area: member2;
+    }
+    .member3{
+        grid-area: member3;
+    }
+    .member4{
+        grid-area: member4;
+    }
+    .member5{
+        grid-area: member5;
+    }
+    .member6{
+        grid-area: member6;
+    }
+    .member7{
+        grid-area: member7;
+    }
+}

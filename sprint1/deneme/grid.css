@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin : 5px 10px;
+    display: flex;
+    flex-flow: column wrap;
+    box-sizing: border-box;
+    
+}
+
+.section1{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: "name . desc desc";
+    margin-bottom: 100px;
+
+}
+
+.title{
+    background-color: aqua;
+    grid-area: name;
+
+}
+
+span{
+    background-color: blue;
+    grid-area: desc;
+
+}
+
+.section2{
+    
+    margin: 0px 20px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(10,10%);
+    grid-template-columns: repeat(3,25%);
+    grid-gap: 8%;
+    grid-template-areas: "w1 . w3"
+                        "w1 w2 w3"
+                        "w1 w2 w3"
+                        "w1 w2 w3"
+                        ". w2 ."
+                        "w4 . w6"
+                        "w4 w5 w6"
+                        "w4 w5 w6"
+                        "w4 w5 w6"
+                        ". w5 .";
+}
+
+
+
+
+.window1{
+    border: 3px solid red;
+    grid-area: w1;
+    background-image: url(./images/photo1.png);
+    background-size: cover;
+
+}
+.window2{
+    grid-area: w2;
+    background-image: url(./images/photo2.png);
+    background-size: cover;
+}
+.window3{
+    grid-area: w3;
+    background-image: url(./images/photo3.png);
+    background-size: cover;
+}
+.window4{
+    grid-area: w4;
+    background-image: url(./images/photo4.png);
+    background-size: cover;
+}
+.window5{
+    grid-area: w5;
+    background-image: url(./images/photo5.png);
+    background-size: cover;
+}
+.window6{
+    grid-area: w6;
+    background-image: url(./images/photo6.png);
+    background-size: cover;
+}
+
+
+
+
+
+
+@media (max-width : 1024px){
+
+    .section2{
+    
+        margin: 0px 100px;
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(12,8%);
+        grid-template-columns: repeat(2,40%);
+        grid-gap: 8%;
+        grid-template-areas: "w1 ."
+                            "w1 w2"
+                            "w1 w2"
+                            ". w2"
+                            "w3 . "
+                            "w3 w4 "
+                            "w3 w4"
+                            ". w4"
+                            "w5 ."
+                            "w5  w6"
+                            "w5 w6"
+                            ". w6";
+    .section1{
+        display: grid;
+        grid-template-row: repeat(4,1fr);
+        grid-template-areas: "name"
+                            "." 
+                            "."
+                            "desc";
+
+    }
+
+}
